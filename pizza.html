@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria do Capricho</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #FFA500; /* Fundo Laranja */
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Container centralizado para organizar todo o conteúdo */
+        .container {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: left; /* Mantém textos alinhados por padrão */
+        }
+
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para a logo (sem sombra ou borda chamativa) */
+        img[alt="logo"] {
+            height: auto;
+            width: 200px;
+            box-shadow: none;
+            border-radius: 0;
+            display: inline-block;
+        }
+
+        /* Estilo geral para as fotos das pizzas */
+        img {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin: 10px;
+            display: inline-block;
+            object-fit: cover;
+            height: 150px; 
+            width: 200px;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Container centralizador para exibir as fotos lado a lado */
+        .galeria-fotos {
+            text-align: center;
+            margin: 15px 0 30px 0;
+        }
+
+        h1 {
+            color: #B2002C; /* Vermelho */
+            font-size: 2.5rem;
+            border-bottom: 2px solid #ffbc0d; /* Amarelo */
+            padding-bottom: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #FFFFFF;
+            background-color: #B2002C; /* Fundo Vermelho */
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+
+        p {
+            margin: 20px 0;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        /* Mensagem de convite destacada */
+        .destaque-pizzaria {
+            text-align: center;
+            font-weight: bold;
+            color: #B2002C;
+            font-size: 1.2rem;
+            margin: 25px 0;
+        }
+
+        /* Estilo das listas do Cardápio */
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            color: #555;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* Container centralizador para o botão */
+        .area-botao {
+            text-align: center;
+            margin: 40px 0 20px 0;
+        }
+
+        /* Botão do WhatsApp customizado */
+        a[href*="wa.me"] {
+            display: inline-block;
+            background-color: #25d366;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        a[href*="wa.me"]:hover {
+            background-color: #128c7e;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Logo -->
+        <div class="logo-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT9b0E4UqZSvUR3-g_sCdfTpWpkwkJg1nKVg&s" alt="logo">
+        </div>
+
+        <h1>Pizzaria do Capricho</h1>
+
+        <p>A Pizzaria do Capricho é um exemplo perfeito de como a dedicação e a paixão pela culinária podem transformar uma simples refeição em uma verdadeira experiência gastronômica. Localizada em um ambiente aconchegante e acolhedor, ela se destaca por oferecer aos seus clientes uma variedade de pizzas artesanais, preparadas com ingredientes frescos e de alta qualidade. O cardápio é um convite ao paladar, com combinações clássicas e inovadoras que agradam a todos os gostos. Além disso, o atendimento atencioso e personalizado garante que cada visita seja especial. Seja para um jantar em família, uma celebração com amigos ou um momento a dois, a Pizzaria do Capricho é o lugar ideal para desfrutar de uma deliciosa pizza e criar memórias inesquecíveis.</p>
+        
+        <p class="destaque-pizzaria">Nossa pizzaria te convida a ter uma das experiências mais saborosas da região</p>
+        
+        <h2>Cardápio</h2>
+
+        <h2>Sabores: Pizza Gourmet Doce</h2>
+        <ul>
+            <li>Ferrero Rocher</li>
+            <li>Banana com Canela</li>
+            <li>Chocolate com Morango</li>
+            <li>Romeu e Julieta</li>
+        </ul>
+
+        <!-- Fotos das Pizzas Doces -->
+        <div class="galeria-fotos">
+            <img src="https://images.tcdn.com.br/img/img_prod/396619/789_2_20231207095642.jpg" alt="Pizza Ferrero Rocher">
+            <img src="https://s2.glbimg.com/XisxNKq66vpxpuG44enjmLdio6o=/600x0/filters:quality(70)/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2022/M/q/GHOy3ZT9GjPxMJH7FYmw/pizza-doce-banana-receita.jpg" alt="Banana com Canela">
+            <img src="https://www.sabornamesa.com.br/media/k2/items/cache/14985840dca330e3b808aa792fa422f9_XL.jpg" alt="Chocolate com Morango">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc-332uiUsyUucEAi4rAyWkDZAEuARgGCBsQ&s" alt="Romeu e Julieta">
+        </div>
+
+        <h2>Sabores: Pizza Gourmet Salgada</h2>
+        <ul>
+            <li>Calabresa</li>
+            <li>Frango com Catupiry</li>
+            <li>Portuguesa</li>
+            <li>Mussarela</li>
+            <li>Marguerita</li>
+            <li>Quatro Queijos</li>
+            <li>Carne Seca</li>
+            <li>Peperoni</li>
+        </ul>
+
+        <!-- Fotos das Pizzas Salgadas -->
+        <div class="galeria-fotos">
+            <img src="https://blog.novasafra.com.br/wp-content/uploads/2016/01/accb7d_37d37d9f1001e88384dafc6e5cc60c4f.jpg_1024-780x450.jpg" alt="Calabresa">
+            <img src="https://www.sabornamesa.com.br/media/k2/items/cache/ada34cd2101afafaba465aad112ee3c1_XL.jpg" alt="Frango com Catupiry">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/1c/8d/e2/88/borda-recheada.jpg" alt="Portuguesa">
+            <img src="https://pizzariamikelly.com.br/media/cache/f2/c8/f2c81be23588541592a5172bea7bf579.png" alt="Mussarela">
+            <img src="https://rossopizza.com.br/salao/wp-content/uploads/2019/09/istock-181175167.jpg" alt="Marguerita">
+            <img src="https://www.sabornamesa.com.br/media/k2/items/cache/32699af76cfc6e0191d612ffd4e88ee9_XL.jpg" alt="Quatro Queijos">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWpf9O5dh_yYC55mLX0ysCdD50IblJJCGuVw&s" alt="Carne Seca">
+            <img src="https://www.frije.com/content/recipes/124127/800-1.jpg" alt="Peperoni">
+        </div>
+
+        <h2>Refrigerantes</h2>
+        <ul>
+            <li>Coca Cola</li>
+            <li>Pepsi</li>
+            <li>Guaraná</li>
+            <li>Fanta Uva</li>
+            <li>Fanta Laranja</li>
+        </ul>
+
+        <h2>Acompanhamentos de Molho</h2>
+        <ul>
+            <li>Ketchup</li>
+            <li>Molho Rosa</li>
+            <li>Molho Verde</li>
+            <li>Maionese</li>
+        </ul>
+
+        <!-- Botão WhatsApp de Pedidos -->
+        <div class="area-botao">
+            <a href="https://wa.me/5531986211350" target="_blank">Peça agora pelo WhatsApp! 🍕</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
